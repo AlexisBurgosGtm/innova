@@ -1,18 +1,18 @@
 ﻿const mysql = require('mysql');
 
-const config = {
+const configx = {
   host            : 'mysql7003.site4now.net',
   user            : 'a45479_mysql',
   password        : 'razors1805',
   database        : 'db_a45479_mysql'
 };
 
-const configx = {
+const config = {
   connectionLimit : 10,
   host            : 'localhost',
   user            : 'root',
   password        : '',
-  database        : 'logistica',
+  database        : 'onne-innova',
   multipleStatements: true
 };
 

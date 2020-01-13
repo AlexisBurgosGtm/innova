@@ -40,6 +40,7 @@ app.get("/",function(req,res){
 	res.sendFile(path + 'index.html');
 }); 
 
+
 // ROUTER CLIENTES
  app.use('/clientes', routerClientes);
 

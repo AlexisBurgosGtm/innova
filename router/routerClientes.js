@@ -2,6 +2,29 @@ const express = require('express');
 const router = express.Router();
 const execute = require('./connection');
 
+
+router.post("/contacto", async(req,res)=>{
+  
+  let data = req.body;
+  
+  console.log(data);
+
+  res.send('datos enviados exitosamente')
+  //let qr = ``;
+	//execute.Query(res,qr);
+
+});
+
+router.get("/miscursos", async(req,res)=>{
+  
+  const {usuario} = req.query;
+  
+  let qr = ``;
+
+	execute.Query(res,qr,0);
+
+});
+
 // LISTA DE CLIENTES
 router.get("/lista", async(req,res)=>{
   
